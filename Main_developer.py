@@ -410,12 +410,12 @@ root = style.master
 root.geometry('800x800')
 root.title('低压电气开关电寿命预测软件——开发者界面')
 
-image2 =Image.open(r'图片\nuaa2.gif')
+image2 =Image.open(r'picture\nuaa2.gif')
 background_image = ImageTk.PhotoImage(image2)
 
 background_label = Label(root, image=background_image)
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
-photo_user = Image.open(r'图片\button.gif')
+photo_user = Image.open(r'picture\button.gif')
 photo_user1 = ImageTk.PhotoImage(photo_user)
 
 btn1 = Button(root, text='生成数据集', command=newwind, font=('华文新魏', 18), image=photo_user1, compound="center")
