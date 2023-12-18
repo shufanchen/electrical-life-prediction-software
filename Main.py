@@ -19,7 +19,7 @@ def developer():
 
 
 def help_doc():
-    os.system(r'C:\Users\ShufanChen\Desktop\软著\help\software_help.docx')
+    os.system(r'.\help\software_help.docx')
 
 
 def version_introduction():
@@ -42,13 +42,13 @@ def exit1():
     sys.exit()
 
 
-background = Image.open(r'图片\nuaa.jpg')
+background = Image.open(r'picture\nuaa.jpg')
 photo = ImageTk.PhotoImage(background)
 canvas = Canvas(root1, width=800, height=800, bd=0, highlightthickness=0)
 canvas.create_image(300, 300, image=photo)
 canvas.pack()
 
-photo_user = Image.open('图片/button.gif')
+photo_user = Image.open('picture/button.gif')
 photo_user1 = ImageTk.PhotoImage(photo_user)
 btn = Button(root1, text='用户入口',font=('华文新魏', 18),command=user, relief=GROOVE, image=photo_user1, compound="center")
 btn.place(relx=0.4, rely=0.14, relwidth=0.2, relheight=0.09)
